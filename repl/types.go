@@ -1,6 +1,6 @@
 package repl
 
-import "github.com/garslo/go-cmd-repl"
+import "github.com/Frank-gh/go-cmd-repl"
 
 type ActionFunc func(...cmd_repl.Argument) interface{}
 

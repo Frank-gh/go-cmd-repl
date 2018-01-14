@@ -3,7 +3,7 @@ package parser
 import (
 	"strings"
 
-	"github.com/garslo/go-cmd-repl"
+	"github.com/Frank-gh/go-cmd-repl"
 )
 
 type commandParser struct{}

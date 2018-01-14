@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/garslo/go-cmd-repl/parser"
+	"github.com/Frank-gh/go-cmd-repl/parser"
 )
 
 type repl struct {
@@ -37,11 +37,14 @@ func (r *repl) Start() error {
 	reader := bufio.NewReader(r.in)
 	var err error
 	for {
-		fmt.Fprintf(r.out, "> ")
+		fmt.Fprintf(r.out, "blockchain --> ")
 		line, err := reader.ReadString('\n')
 		if err != nil {
 			break
 		}
+		line = strings.Trim(line, "\n")
+		line = strings.Trim(line, "\r")
+		line = strings.Trim(line, " ")
 		command := r.parser.Parse(line)
 		r.runCommand(command)
 	}

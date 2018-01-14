@@ -2,7 +2,8 @@ package parser_test
 
 import (
 	"strings"
-	. "github.com/garslo/go-cmd-repl/parser"
+
+	. "github.com/Frank-gh/go-cmd-repl/parser"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

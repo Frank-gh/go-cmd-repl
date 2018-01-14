@@ -2,10 +2,11 @@ package repl_test
 
 import (
 	"os"
+
 	. "github.com/onsi/ginkgo"
 	//. "github.com/onsi/gomega"
 
-	. "github.com/garslo/go-cmd-repl/repl"
+	. "github.com/Frank-gh/go-cmd-repl/repl"
 )
 
 var _ = Describe("Repl", func() {

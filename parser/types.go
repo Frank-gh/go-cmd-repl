@@ -1,6 +1,6 @@
 package parser
 
-import "github.com/garslo/go-cmd-repl"
+import "github.com/Frank-gh/go-cmd-repl"
 
 type Command struct {
 	Name string
