@@ -43,9 +43,10 @@ func (r *repl) Start() error {
 		if err != nil {
 			break
 		}
-		line = strings.Trim(line, "\n")
-		line = strings.Trim(line, "\r")
-		line = strings.Trim(line, " ")
+		line = strings.Trim(line, "\r\n")
+		if line == "" {
+			continue
+		}
 		command := r.parser.Parse(line)
 		r.runCommand(command)
 	}
